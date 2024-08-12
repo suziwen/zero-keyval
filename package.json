@@ -22,7 +22,7 @@
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "rollup -c && mv dist/umd.js dist/zero-keyval.js && node lib/size-report.js",
+    "build": "rollup -c && node lib/size-report.js",
     "dev": "rollup -cw & serve",
     "prepack": "npm run build"
   },
